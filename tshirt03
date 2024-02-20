@@ -1,0 +1,18 @@
+	@@ -9,14 +10,15 @@
+910	  class MyApp extends StatelessWidget {
+1011	    @override
+1112	    Widget build(BuildContext context) {
+13	+     final wordPair = WordPair.random();
+1214	      return MaterialApp(
+1315	        title: 'Welcome to Flutter',
+1416	        home: Scaffold(
+1517	          appBar: AppBar(
+1618	            title: const Text('Welcome to Flutter'),
+1719	          ),
+18	-         body: const Center(
+19	-           child: Text('Hello World'),
+20	+         body: Center(
+21	+           child: Text(wordPair.asPascalCase),
+2022	          ),
+2123	        ),
+2224	      );

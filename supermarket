@@ -1,0 +1,13 @@
+pk={}
+while True:
+    i=input("enter the item with price : ")
+    if not i:
+        break
+    p1=i.split()
+    price=p1[-1]
+    item=" ".join(p1[:-1])
+    pk[item]=pk.get(item,0)+int(price)
+for a,b in pk.items():
+        print(a,b)
+    
+    
